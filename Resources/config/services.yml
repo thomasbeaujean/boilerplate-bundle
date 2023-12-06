@@ -1,0 +1,11 @@
+services:
+    tbn\BoilerplateBundle\Command\MakeBoilerplateCommand:
+        public: true
+        class: "tbn\\BoilerplateBundle\\Command\\MakeBoilerplateCommand"
+        arguments:
+            - '@twig'
+            - '%kernel.project_dir%'
+            - '%tbn.boilerplate.template_keys%'
+            - '%tbn.boilerplate.templates%'
+        tags:
+            - { name: 'console.command', command: 'make:boilerplate' }
