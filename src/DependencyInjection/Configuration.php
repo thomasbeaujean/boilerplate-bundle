@@ -1,6 +1,6 @@
 <?php
 
-namespace tbn\BoilerplateBundle\DependencyInjection;
+namespace Tbn\BoilerplateBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

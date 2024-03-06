@@ -1,6 +1,6 @@
 <?php
 
-namespace tbn\BoilerplateBundle;
+namespace Tbn\BoilerplateBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 

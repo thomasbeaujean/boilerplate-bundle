@@ -1,7 +1,7 @@
 services:
-    tbn\BoilerplateBundle\Command\MakeBoilerplateCommand:
+    Tbn\BoilerplateBundle\Command\MakeBoilerplateCommand:
         public: true
-        class: "tbn\\BoilerplateBundle\\Command\\MakeBoilerplateCommand"
+        class: "Tbn\\BoilerplateBundle\\Command\\MakeBoilerplateCommand"
         arguments:
             - '@twig'
             - '%kernel.project_dir%'

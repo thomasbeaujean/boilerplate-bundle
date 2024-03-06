@@ -1,6 +1,6 @@
 <?php
 
-namespace tbn\BoilerplateBundle\DependencyInjection;
+namespace Tbn\BoilerplateBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
