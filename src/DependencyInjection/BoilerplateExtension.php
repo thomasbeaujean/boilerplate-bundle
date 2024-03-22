@@ -19,6 +19,7 @@ class BoilerplateExtension extends Extension
         $templateKeys = array_keys($templates);
         $container->setParameter('tbn.boilerplate.template_keys', $templateKeys);
         $container->setParameter('tbn.boilerplate.templates', $templates);
+        $container->setParameter('tbn.boilerplate.project_dir', $config['project_dir']);
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__.'/../Resources/config'));
         $loader->load('services.yml');

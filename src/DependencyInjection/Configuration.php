@@ -17,6 +17,9 @@ class Configuration implements ConfigurationInterface
 
         $rootNode
         ->children()
+            ->scalarNode('project_dir')
+                ->defaultValue('/srv/app')
+            ->end()
             ->arrayNode('templates')
                 ->useAttributeAsKey('name')
                     ->prototype('array')
