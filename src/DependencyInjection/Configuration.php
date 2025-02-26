@@ -31,7 +31,7 @@ class Configuration implements ConfigurationInterface
                                     ->scalarNode('folder')->end()
                                     ->scalarNode('template')->end()
                                     ->scalarNode('suffix')->end()
-                                    ->scalarNode('prefix')->default('')->end()
+                                    ->scalarNode('prefix')->defaultValue('')->end()
                                 ->end()
                             ->end()
                         ->end()
