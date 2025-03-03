@@ -64,7 +64,7 @@ class MakeBoilerplateCommand extends Command
                 'folder' => $folder,
             ]);
 
-            $filename = sprintf('%s/%s%s%s.php', $folderPath, $renderer['prefix'], $className, $renderer['suffix']);
+            $filename = sprintf('%s/%s%s%s.%s', $folderPath, $renderer['prefix'], $className, $renderer['suffix'],$renderer['extension']);
             file_put_contents($filename, $htmlContents);
         }
 
