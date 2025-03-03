@@ -32,6 +32,7 @@ class Configuration implements ConfigurationInterface
                                     ->scalarNode('template')->end()
                                     ->scalarNode('suffix')->end()
                                     ->scalarNode('prefix')->defaultValue('')->end()
+                                    ->scalarNode('extension')->defaultValue('php')->end()
                                 ->end()
                             ->end()
                         ->end()
